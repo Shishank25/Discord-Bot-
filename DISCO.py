@@ -22,8 +22,7 @@ engine.setProperty('volume', 0.50)              # Adjust volume (0.0 to 1.0)
 
 load_dotenv()
 TOKEN: Final[str] = os.getenv('discord_token')
-allowed_channel_id = [1283533822012424332,1285288807297581109]
-specific_user_id = 850061033921970177
+allowed_channel_id = ["Get desired Channel IDs from Discord and paste them inside this list without quotes, separated by Commas"]
 
 FFMPEG_OPTIONS = {'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5',
     'options': '-vn -ar 48000 -b:a 192k'}
